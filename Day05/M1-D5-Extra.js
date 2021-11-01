@@ -52,7 +52,7 @@ let item2 = {
 
 }
 
-
+let shoppingCart = [item1,item2]
 
 const shoppingCartTotal = function(shoppingCart){ 
     let sum=0
@@ -61,14 +61,16 @@ const shoppingCartTotal = function(shoppingCart){
     }
     return sum
 }
-console.log (shoppingCartTotal([item1,item2]))
+console.log (shoppingCartTotal(shoppingCart))
 
 /* EXTRA 3
  In your eCommerce you have an array of objects called shoppingCart. Each one of these objects has a price, a name, an id and the quantity to be shipped.
  Create a function called "addToShoppingCart" which receives a new object, adds it to shoppingCart and returns the total number of items in the shoppingCart.
 */
 
-/* WRITE YOUR ANSWER HERE */
+  const addToShoppingCartTotal = function(shoppingCart){ 
+
+}
 
 /* EXTRA 4
  In your eCommerce you have an array of objects called shoppingCart. Each one of these objects has a price, a name, an id and the quantity to be shipped.

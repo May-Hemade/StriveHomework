@@ -148,16 +148,14 @@ console.log(cutString("hope"))
 const giveMeRandom = function(n) {
     let result = []
     for (let i = 0; i< n; i++) {
-        result.push(getRandomInt(0, 10))
+      let getRandom = Math.random()*10
+      let roundedNumber = Math.round(getRandom)
+      result.push(roundedNumber) 
     }
     return result
 }
 
-const getRandomInt = function (min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+
 
 console.log(giveMeRandom(7))
 
